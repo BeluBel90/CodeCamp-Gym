@@ -1,0 +1,101 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("movilbackground.jpg");
+    /* https://i.pinimg.com/originals/f0/a8/2b/f0a82bfa7cf13599c1c903897d4550b6.jpg*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    #content {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    #title {
+        text-align: center;
+        color: rgb(220, 220, 220);
+        text-shadow: 2px 2px 2px rgb(26, 26, 0), 2px 2px 2px rgb(77, 77, 0), 3px 3px 3px rgb(204, 204, 0);
+        font-size: 3rem;
+    }
+
+    #description {
+        text-align: center;
+        padding-bottom: 2rem;
+        color: rgb(165, 165, 98);
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgb(23, 23, 23), 0px 0px 3px rgb(200, 200, 200);
+    }
+
+    #survey-form {
+        background-color: rgba(255, 255, 77, 0.7);
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+        color:rgb(51,51,1);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .input{
+        border:none;
+        border-bottom:2px solid rgb(26,26,26);
+        background:transparent;
+        height:2rem;
+        border-radius:0.2rem;
+        width: 100%;
+        margin:1rem 0 0 0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+
+    .schedule{ padding:3.5rem 0 2rem;}
+
+    #radio-label{ padding:2rem 0 1.5rem 0; }
+
+   input[placeholder]{font-size: 1rem; }
+
+    textarea{
+    font-size: 1rem;
+    padding:0.2rem 0 4rem;
+    resize: none;
+    margin-top:0;
+    color:rgb(56, 56, 56);
+    }
+
+    p{ margin:1rem 0 0.2rem; }
+
+    input[type=submit]{
+      width: 100%;
+      height: 2rem;
+      font-size: 1.2rem;
+      margin:0.5rem 0.5rem 0.5rem 0.1rem;
+      border:0.3rem outset rgb(36,36,36,);
+      background:rgb(70,70,70);
+    }
+    input[type=submit]:hover{background-color: rgb(102,102,102); }
+   
+    @media (min-width:768px){
+          #survey-form{
+             width:60%;
+            margin:auto;}
+    }
+  
+    @media(min-width:1200px){
+        body{
+            background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+             url("deskdesk.jpeg");
+            background-size:cover;
+             max-width: 100%;}
+            #survey-form{
+                width:60%;
+                margin:auto;
+            }
+    }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>CodeCamp GYM</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <h1 id="title">CodeCamp GYM</h1>
+            <p id="description">Please fill in the form and help us to improve our services.</p>
+        </div>
+        <form id="survey-form">
+            <input type="text" id="name" name="name" class="input" placeholder="Enter your name" required><br>
+            <label for="name" id="name-label">Name</label><br>
+
+            <input type="email" id="email" name="email" class="input" placeholder="Enter your email" required><br>
+            <label for="email" id="email-label">Email</label><br>
+
+            <input type="number" id="number" min="13" max="100" name="age" class="input" placeholder="Age"><br>
+            <label for="number" id="number-label">Age</label><br>
+
+            <input type="tel" id="tel" class="input" placeholder="Enter your phone number"><br>
+            <label for="tel">Phone Number</label><br>
+
+
+            <div class="schedule">
+                <label for="dropdown">What time of the day you normally come to the gym?:</label><br>
+                <select id="dropdown" name="schedule" class="input" >
+                    <option value="morning">Morning</option>
+                    <option value="afternon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+            </div>
+
+            <p>What training would you like to do?</p>
+            <input type="checkbox" id="spinning" value="spinning" name ="spinning">
+            <label for="spinning">Spinning</label><br>
+
+            <input type="checkbox" id="selfdefense" value="self-defense" name="self-defense">
+            <label for="selfdefense">Self-defense</label><br>
+
+            <input type="checkbox" id="strengthtraining" value="strength-training" name="strength-training">
+            <label for="strengthtraining">Strength-training</label><br>
+
+            <input type="checkbox" id="boxing" value="boxing" name="boxing">
+            <label for="boxing">Boxing</label><br>
+
+            <input type="checkbox" id="crossfit" value="crossfit" name="crossfit">
+            <label for="crossfit">Crossfit</label><br>
+
+            <input type="checkbox" id="zumba" value="zumba" name="zumba">
+            <label for="zumba">Zumba</label><br>
+
+            <input type="checkbox" id="pilates" value="pilates" name="pilates">
+            <label for="pilates">Pilates</label><br>
+
+            <div id="radio-label">
+                <p >would you like to receive nutritional counseling?</p>
+                <input type="radio" id="yes" value="yes" name="nutricion">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" value="no" name="nutricion">
+                <label for="no">No</label>
+            </div>
+
+            <p>If you have other ideas, please share with us:</p>
+            <textarea name="message" class="input" placeholder="Comment..."></textarea><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
